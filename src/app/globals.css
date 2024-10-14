@@ -2,26 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Body styling */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/aidan-bartos-v9rZ3Yz6fSg-unsplash.jpg'); /* Replace with the correct image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9; /* Fallback color in case the image doesn't load */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Container styling */
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(214, 240, 240, 0.9);
+  box-shadow: 0 4px 8px rgba(14, 0, 0, 0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #110101;
+  
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Dropdown styling */
+.dropdown {
+  width: 48%;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Convert button styling */
+.convert-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.convert-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #080101;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
   }
 }
