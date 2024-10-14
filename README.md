@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Currency Converter
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Currency Converter is a web application built with Next.js and TypeScript that allows users to convert values between different currencies seamlessly. The application features a user-friendly interface and is designed to be responsive, making it accessible on both desktop and mobile devices.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **User Input:** Users can enter the amount they wish to convert.
+- **Currency Selection:** Users can choose from multiple currencies, including popular options like USD, EUR, GBP, and PKR.
+- **Real-Time Conversion:** The application fetches live conversion rates using the ExchangeRate-API and displays the converted amount instantly.
+- **Responsive Design:** The application is fully responsive, ensuring a smooth experience across various screen sizes.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js for building the application
+- TypeScript for added type safety
+- HTML and CSS for structure and styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To set up the project locally, clone the repository and install the necessary dependencies. After that, create a `.env.local` file to store your API key for the currency conversion service.
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Once the application is running, users can enter an amount, select their desired currencies, and click the convert button to see the converted value displayed on the screen.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+
+Developed by Yemna Mehmood.
+
